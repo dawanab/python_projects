@@ -1,0 +1,34 @@
+There will be 4 classes of vehicles:
+    > The first class, Car contains 4 variables (private), with these names and conditions:
+        - engine (member); returns a Boolean
+        - cylinders (instance); returns an int
+        - name (instance); returns a string
+        - wheels (member); returns an int; all 4 should have private access
+
+        > The constructor should accept 2 parameters, cylinders and name. 
+        > All of these cars have an engine and 4 wheels. So they should
+        default to 4 and True, respectively. The other 2 variables should
+        be set by the user. 
+   
+        > There are 5 other methods. They should be defined as follows:
+            - start_engine() accepts no parameters and returns a message which says 
+            that the car's engine is starting.
+            - accelerate() accepts no parameters and returns a message that says the car is accelerating
+            - brake() accepts no parameters and returns a message that the car is breaking
+        > The messages that these methods return should somewhere contain the name of the class, Car.
+        > 2 getter methods should be defined here for the instance variables: cylinder and name 
+        with public access
+   
+    > The other 3 classes are subclasses of Car. They have no member variables and the 
+    constructor for each will call the parent constructor for object instantiation. 
+    > Each of these classes will override the three parent methods start_engine, 
+    accelerate(), and brake(). The return messages for these methods should somewhere 
+    contain the name of the class to which it belongs.
+
+
+**** Extra Notes:
+> Class variables (also called static member variables), have only one copy
+of the variable that will be shared amogst all instances of the class. 
+
+> Instance variables are used when each instance of the class has its 
+own independent copy of the variable. 

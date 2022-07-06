@@ -10,14 +10,14 @@ class Hamburger:
         self.__addition_1_price = __price
         self.__addition_1_name = __name
         self.hamburger_price += __price
-        print(f"Added {self.__addition_1_name} = ${self.__addition_1_price}")
+        self.add_ons = f"Added {self.__addition_1_name} = ${self.__addition_1_price}"
         return self.hamburger_price
 
     def add_hamburger_addition_2(self, __name, __price):
         self.__addition_2_price = __price
         self.__addition_2_name = __name
         self.hamburger_price += __price
-        print(f"Added {self.__addition_2_name} = ${self.__addition_2_price}")
+        self.add_ons += f"\nAdded {self.__addition_2_name} = ${self.__addition_2_price}"
         return self.hamburger_price
 
 
@@ -25,18 +25,19 @@ class Hamburger:
         self.__addition_3_price = __price
         self.__addition_3_name = __name
         self.hamburger_price += __price
-        print(f"Added {self.__addition_3_name} = ${self.__addition_3_price}")
+        self.add_ons += f"\nAdded {self.__addition_3_name} = ${self.__addition_3_price}"
         return self.hamburger_price
 
     def add_hamburger_addition_4(self, __name, __price):
         self.__addition_4_price = __price
         self.__addition_4_name = __name
         self.hamburger_price += __price
-        print(f"Added {self.__addition_4_name} = ${self.__addition_4_price}")
+        self.add_ons += f"\nAdded {self.__addition_4_name} = ${self.__addition_4_price}"
         return self.hamburger_price
 
     def itemize_hamburger(self):
         print(f"{self.__name} Hamburger on {self.__bread_roll_type} with {self.__meat} = ${self.__price}")
+        print(f"Your add-ons are: \n{self.add_ons}")
         return self.hamburger_price
 
 hamburger = Hamburger("Basic", "Sausage", 3.56, "White")

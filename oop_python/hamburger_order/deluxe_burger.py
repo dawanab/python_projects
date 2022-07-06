@@ -21,5 +21,5 @@ class DeluxeBurger(Hamburger):
 
 print("\n")
 deluxe_burger = DeluxeBurger()
-deluxe_burger.itemize_hamburger()
+print(f"Your total Deluxe Burger Price is ${deluxe_burger.itemize_hamburger()}")
 

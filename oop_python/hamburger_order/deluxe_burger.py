@@ -19,5 +19,7 @@ class DeluxeBurger(Hamburger):
     def add_hamburger_addition_4(self, __name, __price):
         print(f"Sorry. Can't add additional items to a deluxe burger.")
 
-
+print("\n")
+deluxe_burger = DeluxeBurger()
+deluxe_burger.itemize_hamburger()
 

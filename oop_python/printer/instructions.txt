@@ -1,0 +1,28 @@
+> Create a class called Printer. There will be 2 member variables of private access:
+    - toner_level and pages_printed  
+    - duplex
+
+> The constructor will accept toner_level and duplex as parameters with the rules:
+    - toner_level must be greater than -1, but less than or equal to 100. 
+    If it does not meet the conditions, it should be initalized to -1.
+    - duplex should be initalized to the value of the parameter
+    - pages_printed should be initialized to 0.
+
+> The methods should be defined as:
+    - add_toner() will accept one parameter, toner_amount. It should be greater 
+    than 0 and less than or equal to 100.
+    If this condition is met, a second test must be included to test whether toner_level 
+    plus toner_amount is greater than 100.
+    If so, the method should return -1. If not then toner_level should have the incoming 
+    toner_amount added to it and the new toner_level should then be returned by the method. 
+    Also, if the initial condition test fails, then the method should return -1.
+    
+    > print_pages will accept one parameter, pages. A variable called pages_to_print should
+    be created and initialized to the value of the incoming parameter. A conditional check 
+    should be performed on whether the variable duplex is either true or false. If true,
+    then a calculation must be performed to determine the number of pages needed to print the 
+    job double-sided. The pages_to_print value is then added to the class field pages_printed, 
+    but the value of pages_to_print should be returned by the method.
+
+    > get_pages_printed has no parameters & returns the value of the variable returned by the method.
+    

@@ -81,6 +81,9 @@ print(my_grocery.remove_grocery_item("Cheese"))
 # Printing the grocery list 
 my_grocery.print_grocery_list()
 
+print(my_grocery.on_file("Milk"))
+print(my_grocery.on_file("Eggs"))
+
 
 
 

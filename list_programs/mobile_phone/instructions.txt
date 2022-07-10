@@ -1,0 +1,18 @@
+// Create a program that implements a simple mobile phone with the following capabilities:
+    > Able to store, modify, remove and query contact names.
+    >  You will want to create a separate class for Contacts (name and phone number).
+    >  Create a master class (MobilePhone) that holds the list of Contacts
+    >  The MobilePhone class has the functionality listed above.
+
+// Add a menu of options that are available:
+    > Options:  Quit, print list of contacts, add new contact, update existing contact, 
+    remove contact and search/find contact.
+    > When adding or updating, be sure to check if the contact already exists (use name)
+    > Be sure not to expose the inner workings of the list to MobilePhone
+    > e.g. no ints, no .get(i) etc
+    > MobilePhone should do everything with Contact objects only.
+
+// Contact Class: 
+    > This class will give us the option to create a new Contact.
+    > When we initialize a new Contact object, it can be created
+    > by entering in the desired name and phone number of the new contact 

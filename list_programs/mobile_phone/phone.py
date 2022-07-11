@@ -113,6 +113,9 @@ class MobilePhone:
                 break
             elif option == "2":
                 self.add_new_contact() # Come back and fix this
+            elif option == "3":
+                self.update_contact()
+
 
 
 my_phone = MobilePhone("555 025 0612")

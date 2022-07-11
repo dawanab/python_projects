@@ -72,10 +72,12 @@ class MobilePhone:
     def print_contacts(self):
         print("Contact List:")
         for i in range(len(self.my_contacts)):
-            print(f"{i + 1}. {self.my_contacts.index(i).get_name()} = {self.my_contacts.index(i).get_phone_number()}")
+            # print(f"{i + 1}. {self.my_contacts.index(i).get_name()} = {self.my_contacts.index(i).get_phone_number()}")
+            print(f"{i + 1}. {self.my_contacts.__getitem__(i)}")
+            print()
 
     """ Starting a method with a dunder causes Python to do name mangling.
-    Because of this, we call private methods such: object.Class_Name.method_to_call() """
+    Because of this, we call private methods such: object._Class_Name__method_to_call() """
     def __start_phone(self):
         print("Phone is booting up!")
 
@@ -119,6 +121,7 @@ class MobilePhone:
 
 
 my_phone = MobilePhone("555 025 0612")
+
 
         
 

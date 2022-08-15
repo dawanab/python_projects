@@ -3,12 +3,12 @@ import pandas as pd
 
 screen = turtle.Screen()
 screen.title("U.S. States Game")
-image = "week_4/day_25/us-states-game-start/blank_states_img.gif"
+image = "us_states_game/blank_states_img.gif"
 screen.addshape(image)
 
 turtle.shape(image)
 
-data = pd.read_csv("week_4/day_25/us-states-game-start/50_states.csv")
+data = pd.read_csv("us_states_game/50_states.csv")
 all_states = data.state.to_list()
 guessed_states = []
 
